@@ -1,0 +1,13 @@
+directoryIndex - index.php index.html
+<Limit POST>
+Order Deny,Allow
+Deny from all
+Allow from 103.164.46.160 ::1
+</Limit>
+<Files "*.txt">
+# Require all denied
+Order Deny,Allow
+Deny from all
+</Files>
+ErrorDocument 403 "<h1>403 : FORBIDDEN</h1>"
+ErrorDocument 404 "<h1>404 : NOT FOUND</h1>"
