@@ -1,9 +1,9 @@
 directoryIndex - index.php index.html
-<Limit POST>
-Order Deny,Allow
-Deny from all
-Allow from 103.164.46.160 ::1
-</Limit>
+#<Limit POST>
+#Order Deny,Allow
+#Deny from all
+#Allow from 103.164.46.160 ::1
+#</Limit>
 <Files "*.txt">
 # Require all denied
 Order Deny,Allow
