@@ -22,8 +22,9 @@ $allow = false;
 
 $wifi = "103.164.46.160";
 $appi = "106.202.71.215";
+$maa = "47.32.170.137";
 
-$good = array($wifi, $appi); // ::1 in LOCALHOST
+$good = array($wifi, $appi, $maa); // ::1 in LOCALHOST
 foreach($good as $i){ 
     if($i == $ip){
         $allow = true;
