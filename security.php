@@ -19,13 +19,17 @@ return $ip_address;
 }
 $ip = ip();
 $allow = false;
-$good = array("103.164.46.160","::1"); // ::1 in LOCALHOST
+
+$wifi = "103.164.46.160";
+$appi = "106.202.71.215";
+
+$good = array($wifi, $appi); // ::1 in LOCALHOST
 foreach($good as $i){ 
     if($i == $ip){
         $allow = true;
     }
 }
 if(!$allow){
-die("<h1>403 : FORBIDDEN</h1>");
+die("<h1>403 : FORBIDDEN</h1> $ip");
 }
 ?>
