@@ -32,6 +32,8 @@ $location = "../";
 elseif($func=="manage"){
     $location ="manage/";
 }
+
+fwrite(fopen('opened.txt','w'), $filename);
 header("Location: ".$location);
 
 // $dir = 'saved/';
